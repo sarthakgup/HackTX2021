@@ -55,7 +55,7 @@
       //echo "logged in";
       session_start();
       $_SESSION["username"] = $username;
-      header("Location: home.html");
+      header("Location: mainPage.html");
    };
    
 
