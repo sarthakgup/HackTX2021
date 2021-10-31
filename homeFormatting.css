@@ -22,7 +22,7 @@ html
 a
 {
     text-decoration: none;
-    color: #eee
+    color: #eee;
 }
 
 /*
@@ -177,6 +177,9 @@ nav ul li a:hover::before,
 nav ul li a:hover::after
 {
     transform: scaleX(1);
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee, 
+        0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
 }
 
 
