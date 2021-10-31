@@ -1,0 +1,281 @@
+
+body
+{
+    background-color: black;
+    color: white;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 25px;
+    font-family: "Roboto Cn", sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #eee
+}
+
+/*
+header
+{
+    width: 100%;
+    height: 50px;
+    background: black;
+    background-size: cover;
+}
+*/
+
+.container
+{
+    max-width: 50rem;
+    width: 10%;
+    margin: 10px;
+}
+
+
+nav
+{
+    padding-top: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    background-color: black;
+}
+
+nav form
+{
+    display: flex;
+    height: 40px;
+    padding: 2px;
+    background: 2px;
+    background: black;
+    min-width: 18%!important;
+    border: 1px solid black;
+    border-radius: 36px;
+}
+
+nav form .search-data
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: white;
+    font-size: 17px;
+    border: none;
+    font-weight:  500;
+    background: none;
+}
+
+nav form button
+{
+    padding: 0 15px;
+    color: white;
+    font-size: 17px;
+    background: green;
+    border: none;
+    border-radius: 2px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+nav form button:hover{
+    background: green;
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.brand span
+{
+    color: crimson;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    padding: 1rem 0;
+    margin: 0 1.6rem;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+nav ul li a:last-child
+{
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #15f4ee;
+    left: 0;
+    transform:scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before
+{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after
+{
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after
+{
+    transform: scaleX(1);
+}
+
+
+#vids1, video
+{
+    margin-top:  200px;
+    margin-left: 40%;
+    position: relative;
+    
+
+}
+
+h1
+{
+    font-family: "Lucida Console", Times, fantasy;
+    font-size: 52px;
+    color: #15f4ee;
+    margin-left: 40px;  
+    margin-right: 20px; 
+    
+}
+
+/*
+
+#button1.container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#button1
+{
+    outline: white;
+    color: rgb(45, 152, 240);
+    background-color: black;
+    width: 150px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 3px solid #15f4ee;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#button1:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee, 
+        0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+#button2:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee, 
+        0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+#button3:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee, 
+        0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+#button4:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee, 
+        0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+#button2
+{
+    outline: white;
+    color: rgb(45, 152, 240);
+    background-color: black;
+    width: 150px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 3px solid #15f4ee;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#button3
+{
+    outline: white;
+    color: rgb(45, 152, 240);
+    background-color: black;
+    width: 150px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 3px solid #15f4ee;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+#button4
+{
+    outline: white;
+    color: rgb(45, 152, 240);
+    background-color: black;
+    width: 150px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 400;
+    border: 3px solid #15f4ee;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+*/
